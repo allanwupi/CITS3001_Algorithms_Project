@@ -2,7 +2,7 @@
 A collection of programming problems in the problemtools format.
 
 ## Project Requirements
-Each person in the team is to submit 1 programming problem in [**problemtools**](https://github.com/Kattis/problemtools) format. Note that we are using the [***Legacy (ICPC) version***](https://www.kattis.com/problem-package-format/spec/legacy-icpc.html#problem-statements).
+Each person in the team is to submit 1 programming problem using the [problemtools](https://github.com/Kattis/problemtools) directory format. Note that we are using the [Legacy (ICPC) version](https://www.kattis.com/problem-package-format/spec/legacy-icpc.html#problem-statements).
 
 ```
 sample-problem-grumpyqueue
@@ -91,6 +91,8 @@ limits:
   validation_memory: 2048
   validation_output: 8
 ```
+
+See also the [DOMJudge problem format specification](https://www.domjudge.org/docs/manual/7.3/problem-format.html) for details on `domjudge-problem.ini`
 
 Each person in the team must also produce a 1 page solution description / editorial with:
 - High level description of the intended solution
