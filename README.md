@@ -5,7 +5,7 @@ A collection of programming problems in the problemtools format.
 Each person in the team is to submit 1 programming problem in [**problemtools**](https://github.com/Kattis/problemtools) format. Note that we are using the [***Legacy (ICPC) version***](https://www.kattis.com/problem-package-format/spec/legacy-icpc.html#problem-statements).
 
 ```
-sample-problem/grumpyqueue
+sample-problem-grumpyqueue
 ├── data
 │   ├── sample
 │   │   ├── 1.ans
@@ -48,29 +48,21 @@ Each programming problem should have the following:
 
 ### TeX Example
 ```tex
-\problemname{Guess the Number}
+\problemname{The Grumpy Queue}
 
-I am thinking of a number between $1$ and $1000$, can you guess what
-number it is?  Given a guess, I will tell you whether the guess is too
-low, too high, or correct.  But I will only give you $10$ guesses, so
-use them wisely!
+People are queueing for coffee. A person is \emph{grumpy} if the person
+{\em directly} in front of them is taller than they are --- they can't see the
+menu. Count the number of grumpy people.
 
-\section*{Interaction}
+\section*{Input}
+The first line contains an integer $n$ ($1 \le n \le 10^6$), the number
+of people. The second line contains $n$ integers $h_1, \dots, h_n$
+($0 \le h_i \le 10^9$), the heights from the front of the queue to the
+back.
 
-Your program should output guesses for the correct number, in the form
-of an integer between $1$ and $1000$ on a line on its own.  After
-making each guess, you need to make sure to flush standard out.
-
-After each guess, there will be a response to be read from standard
-in.  This response is a line with one of the following three words:
-\begin{itemize}
-\item ``\texttt{lower}'' if the number I am thinking of is lower than your guess
-\item ``\texttt{higher}'' if the number I am thinking of is higher than your guess
-\item ``\texttt{correct}'' if your guess is correct
-\end{itemize}
-After having guessed the right answer your program should exit.  If
-you guess incorrectly $10$ times, you won't get any more chances and
-your program will be terminated.
+\section*{Output}
+Output a single integer: the number of positions $i$ ($1 \le i < n$)
+with $h_i > h_{i+1}$.
 ```
 
 *Note that the problem statement Tex file is only the body file. To compile the PDF, install problemtools and run on the problem directory: `problem2pdf sample-problem-grumpyqueue`*
@@ -100,7 +92,7 @@ limits:
   validation_output: 8
 ```
 
-Each person in the team must also produce a 1 page solution description:
+Each person in the team must also produce a 1 page solution description / editorial with:
 - High level description of the intended solution
 - Time and space complexity analysis
 - Declaration of any AI use in building the problem and solution
