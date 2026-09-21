@@ -2,6 +2,7 @@ problem_format_version: legacy
 name: Hello World
 uuid: 3af0312d-d6a1-43ee-8109-0995343b41da
 author: Allan Wu
+license: educational
 
 limits:
   time_limit: 3.0
