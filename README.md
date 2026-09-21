@@ -54,9 +54,9 @@ Additionally, each person in the team must produce a 1 page solution description
 Students should submit their problemtools directory as a zipped file `problem-XX-NNNNNNNN.zip` on LMS, where `XX` is the group number (36) and `NNNNNNNN` is the student number. The individual submissions are due by October 2.
 
 ### Group Assessment
-Students are required to complete attempts and assessments of group members' proejcts by October 9th, via FeedbackFruits.
+Students are required to complete attempts and assessments of each other's problems by October 9th, via FeedbackFruits.
 
-Each person must provide:
+Each person must provide, for each other group member's problem:
 1. At least 1 attempted solution (it does not need to be correct). Spend around an hour on this.
 2. A critical assessment of the difficulty of that problem, and suggestions for improvement.
 
