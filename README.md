@@ -46,6 +46,27 @@ Each programming problem should have the following:
 5. Additional secret test data in `data/secret` to test correctness of submission
 6. Meta-data listing time limits and other context (`problem.yaml`). See [ICPC examples](https://icpc.io/problem-package-format/examples/problem_yaml)
 
+Additionally, each person in the team must produce a 1 page solution description / editorial with:
+- High level description of the intended solution
+- Time and space complexity analysis
+- Declaration of any AI use in building the problem and solution
+
+Students should submit their problemtools directory as a zipped file `problem-XX-NNNNNNNN.zip` on LMS, where `XX` is the group number (36) and `NNNNNNNN` is the student number. The individual submissions are due by October 2.
+
+### Group Assessment
+Students are required to complete attempts and assessments of group members' proejcts by October 9th, via FeedbackFruits.
+
+Each person must provide:
+1. At least 1 attempted solution (it does not need to be correct). Spend around an hour on this.
+2. A critical assessment of the difficulty of that problem, and suggestions for improvement.
+
+### Use of Artificial Intelligence
+Students must not submit any AI generated code or text in this assignment. Students may use AI assistants for ideas, suggestions for debugging, and identifying algorithmic strategy, but all submissions must be the original work of the student.
+
+All students should submit an honest account of how AI was used in their work. Additionally, any sources used for research/inspiration should be cited.
+
+## Examples
+
 ### TeX Example
 ```tex
 \problemname{The Grumpy Queue}
@@ -93,25 +114,6 @@ limits:
 ```
 
 See also the [DOMJudge problem format specification](https://www.domjudge.org/docs/manual/7.3/problem-format.html) for details on `domjudge-problem.ini`
-
-Each person in the team must also produce a 1 page solution description / editorial with:
-- High level description of the intended solution
-- Time and space complexity analysis
-- Declaration of any AI use in building the problem and solution
-
-Each students should submit their problemtools directory `problem-XX-NNNNNNNN` where `XX` is the group number (36) and `NNNNNNNN` is the student number. The individual submissions are due by October 2.
-
-### Use of Artificial Intelligence
-Students must not submit any AI generated code or text in this assignment. Students may use AI assistants for ideas, suggestions for debugging, and identifying algorithmic strategy, but all submissions must be the original work of the student.
-
-All students should submit an honest account of how AI was used in their work. Additionally, any sources used for research/inspiration should be cited.
-
-### Group Assessment
-Students are required to complete attempts and assessments of group members' proejcts by October 9th, via FeedbackFruits.
-
-Each person must provide:
-1. At least 1 attempted solution (it does not need to be correct). Spend around an hour on this.
-2. A critical assessment of the difficulty of that problem, and suggestions for improvement.
 
 ## Marking Scheme
 
