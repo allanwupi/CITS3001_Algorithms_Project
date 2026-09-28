@@ -39,6 +39,7 @@ if __name__ == "__main__":
         chars_by_freq = get_char_frequency(lines)
         print('lines', len(lines))
         print('longest line', max([len(line) for line in lines]))
+        print('shortest line', min([len(line) for line in lines]))
         print('unique characters', len(chars_by_freq))
         for i, (k, v) in enumerate(chars_by_freq):
             print(f'{i+1:02d}: {k!r:s} [{v}]')

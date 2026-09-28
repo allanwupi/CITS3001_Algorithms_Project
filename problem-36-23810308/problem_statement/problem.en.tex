@@ -7,9 +7,9 @@ Moreover, while the source text was encoded using binary 0s and 1s, your collect
 Can you find the optimal variable-length code for compressing a given text using $d$ distinct symbols?
 
 \section*{Input}
-The first line contains two integers $n$ and $d$, where $n$ is the number of lines in the text, and $d$ is the number of symbols used by your storage drive. Each of the next $n$ lines are strings of Unicode characters, where each line contains a maximum of 80 characters, inclusive of \verb|\n|.
+The first line contains two integers $n$ and $d$, where $n$ is the number of lines in the text, and $d$ is the number of symbols used by your storage drive. Each of the next $n$ lines contains between 2 and 80 Unicode characters, where the length includes the line ending \verb|\n|.
 
-Problem bounds are $1 \leq n \leq 10000$, and $3 \leq d \leq 10$.
+Problem bounds are $1 \leq n \leq 10^4$ and $3 \leq d \leq 10$. The maximum number of characters is $80 \times 10^4$. Additionally, the number of unique characters $k$ in any given text, including \verb|\n|, is bounded by $2 \leq k \leq 100$.
 
 \textit{Important}: New lines \verb|\n| are part of the text and should be included in the encoding. On Windows, line endings are represented by two characters, \verb|\r\n|. To avoid any operating system-specific issues, only count line feed characters \verb|\n|. Any carriage return characters \verb|\r| should be ignored.
 
