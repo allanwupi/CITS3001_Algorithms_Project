@@ -7,7 +7,7 @@ Moreover, while the source text was encoded using binary 0s and 1s, your collect
 Can you find the optimal variable-length code for compressing a given text using $d$ distinct symbols?
 
 \section*{Input}
-The first line contains two integers $n$ and $d$, where $n$ is the number of lines in the text, and $d$ is the number of symbols used by your storage drive. Each of the next $n$ lines contains between 2 and 80 Unicode characters, where the length includes the line ending \verb|\n|.
+The first line contains two integers $n$ and $d$, where $n$ is the number of lines in the text, and $d$ is the number of symbols used by your storage drive. Each of the next $n$ lines contains between 2 and 80 Unicode characters, where the length includes the line ending \verb|\n|. The tab character \verb|\t| will never appear.
 
 Problem bounds are $1 \leq n \leq 10^4$ and $3 \leq d \leq 10$. The maximum number of characters is $80 \times 10^4$. Additionally, the number of unique characters $k$ in any given text, including \verb|\n|, is bounded by $2 \leq k \leq 100$.
 
