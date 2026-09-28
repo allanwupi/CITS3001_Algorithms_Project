@@ -5,11 +5,11 @@ You have found a repository of classic texts from the planet Earth, which you wi
 Can you find the optimal variable-length code for compressing a given text using $d$ distinct symbols?
 
 \section*{Input}
-The first line contains two integers $n$ and $d$, where $n$ is the number of lines in the text, and $d$ is the number of symbols used by your storage drive. Each of the next $n$ lines are strings of Unicode characters, where each line contains a maximum of 80 characters, inclusive of the newline character \texttt{'\\n'}.
+The first line contains two integers $n$ and $d$, where $n$ is the number of lines in the text, and $d$ is the number of symbols used by your storage drive. Each of the next $n$ lines are strings of Unicode characters, where each line contains a maximum of 80 characters, inclusive of the newline character \verb|\n|.
 
 Problem bounds are $1 \leq n \leq 10000$, and $3 \leq d \leq 100$.
 
-\em{Note}: On the inferior Windows operating system, line endings are represented by two characters, \texttt{'\\r\\n'}. To avoid any operating system-specific issues, you should ignore any carriage return characters \texttt{'\\r'}. 
+\textit{Important}: In Windows, line endings are represented by two characters, \verb|\r\n|. To avoid any operating system-specific issues, you should ignore any carriage return characters \verb|\r|.
 
 \section*{Output}
 Output the length of the encoded text using an optimal variable-length code for an alphabet of size $d$.
