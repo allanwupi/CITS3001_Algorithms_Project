@@ -1,13 +1,13 @@
 \problemname{D-ary Codes}
 
-You have found a repository of classic texts from the planet Earth, which you wish to share with others. Unfortunately for you, digital storage devices are rare and expensive, so you have very limited storage space. Additionally, while the source texts are all encoded in Unicode (UTF-8) using binary 0's and 1's, you have a disparate collection of storage devices which use multiple-valued logic. For example, a ternary computer drive (base-3) uses ternary digits or `trits', where each value can be 0, 1 or 2.
+You have discovered a repository of classic texts from the planet Earth, which you believe to hold great archeological (and financial) value. Unfortunately, as all forms of digital storage were outlawed after the AI apocalypse, your storage capacity is very limited. Moreover, while the source text is encoded using binary 0s and 1s, your collection of black-market storage devices use \textit{multi-valued logic}. For example, your ternary computer drive (base-3) uses ternary digits or `trits', where each value can be 0, 1 or 2.
 
 Can you find the optimal variable-length code for compressing a given text using $d$ distinct symbols?
 
 \section*{Input}
 The first line contains two integers $n$ and $d$, where $n$ is the number of lines in the text, and $d$ is the number of symbols used by your storage drive. Each of the next $n$ lines are strings of Unicode characters, where each line contains a maximum of 80 characters, inclusive of the newline character \verb|\n|.
 
-Problem bounds are $1 \leq n \leq 10000$, and $3 \leq d \leq 100$.
+Problem bounds are $1 \leq n \leq 10000$, and $3 \leq d \leq 10$.
 
 \textit{Important}: In Windows, line endings are represented by two characters, \verb|\r\n|. To avoid any operating system-specific issues, you should ignore any carriage return characters \verb|\r|.
 
