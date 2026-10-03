@@ -1,0 +1,17 @@
+name: Chrono Delivery
+author: Aiden Blampain
+source: CITS3001 Advanced Algorithms, UWA 2026
+license: cc by-sa
+rights_owner: Aiden Blampain
+type: pass-fail
+validation: default
+keywords: graph shortest-paths floyd-warshall negative-cycles
+
+# Legacy format: the time limit is calculated by verifyproblem as
+#   time_multiplier * (slowest accepted runtime).
+# The time_limit_exceeded submissions must still exceed
+#   time_safety_margin * that limit.
+# The fixed 3-second limit for the judge is set in domjudge-problem.ini.
+limits:
+  time_multiplier: 5
+  time_safety_margin: 2

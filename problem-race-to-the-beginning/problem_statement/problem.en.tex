@@ -1,0 +1,61 @@
+\problemname{Race to the Beginning}
+
+In the far future, scientists have built a network of time stations.
+Each station may contain one-way time machines which transport a traveller
+from one station to another.
+
+Every time machine changes the traveller's position in time by some integer
+amount. A positive value moves the traveller forward in time, while a negative
+value moves the traveller backwards in time.
+
+You begin at time station 0.
+
+You may travel through the time machines as many times as you want, as long as
+the direction of each machine is followed.
+
+Your goal is to determine whether it is possible to travel arbitrarily far
+backwards in time. In other words, for any point in the past, determine whether
+there is some sequence of time-machine journeys starting from station 0 which
+can take you even further into the past.
+
+\section*{Input}
+
+The first line contains two integers $N$ and $M$, where $N$ is the number of
+time stations and $M$ is the number of one-way time machines.
+
+The stations are numbered from $0$ to $N-1$.
+
+Each of the next $M$ lines contains three integers $u$, $v$, and $t$.
+
+This means there is a one-way time machine from station $u$ to station $v$
+which changes time by $t$ units.
+
+A positive value of $t$ moves the traveller forward in time, while a negative
+value moves the traveller backwards in time.
+
+The constraints are:
+
+\[
+1 \le N \le 700
+\]
+
+\[
+0 \le M \le 5000
+\]
+
+\[
+0 \le u,v < N
+\]
+
+\[
+-10^6 \le t \le 10^6
+\]
+
+There may be multiple time machines between the same pair of stations.
+
+\section*{Output}
+
+Output \texttt{YES} if, starting from station 0, it is possible to travel
+arbitrarily far backwards in time.
+
+Otherwise, output \texttt{NO}.

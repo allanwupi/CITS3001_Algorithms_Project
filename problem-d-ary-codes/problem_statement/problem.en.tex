@@ -1,0 +1,17 @@
+\problemname{D-ary Codes}
+
+You have unearthed a repository of classic texts from the planet Earth. You are certain these texts have great archeological (and financial) value. Unfortunately, the computer is bulky and you cannot take it with you. The locals outlawed all digital technology after the AI Apocalypse and destroy computers on sight. You have smuggled in a few flash drives, but your storage capacity is limited.
+
+Moreover, the source text was encoded using binary 0s and 1s, while your black-market storage devices use \textit{many-valued logic}. For example, your ternary drive stores data using ternary digits, a.k.a `trits', where each digit can be 0, 1 or 2.
+
+Can you find the optimal variable-length code for compressing a given text using $d$ distinct symbols?
+
+\section*{Input}
+The first line contains two integers $N$ and $d$, where $N$ is the number of lines in the text, and $d$ is the number of symbols used by your storage drive. Each of the next $N$ lines contains between 2 and 80 Unicode characters, where the length includes the line ending \verb|\n|. The tab character \verb|\t| will never appear.
+
+Problem bounds are $1 \leq N \leq 10^5$ and $3 \leq d \leq 10$. The maximum number of characters is $80 \times 10^5$. Additionally, the number of unique characters $k$ in any given text, including \verb|\n|, is bounded by $2 \leq k \leq 100$.
+
+\textit{Important}: New lines \verb|\n| are part of the text and should be included in the encoding. On Windows, line endings are represented by two characters, \verb|\r\n|. To avoid any operating system-specific issues, only count line feed characters \verb|\n|. Any carriage return characters \verb|\r| should be ignored.
+
+\section*{Output}
+Output the length of the encoded text using an optimal variable-length code for an alphabet of size $d$.

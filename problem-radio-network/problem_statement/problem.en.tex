@@ -1,0 +1,35 @@
+\problemname{Radio network}
+
+Telstra plans to build a new radio network connecting $n$ stations across Perth.
+
+There are $m$ possible fibre links between pairs of stations. Each link has a
+construction cost between $1$ and $C$.
+
+Telstra wants all stations to be connected, directly or indirectly, while
+minimising the total construction cost.
+
+Determine the smallest total construction cost that allows messages to travel
+between any pair of stations in the finished network.
+
+\section*{Input}
+
+The first line contains three integers $n$, $m$ and $C$
+($1 \le n \le 2\cdot 10^5$, $0 \le m \le 10^5$, $1 \le C \le 100$),
+representing the number of stations, the number of possible fibre links,
+and the maximum construction cost.
+
+Each of the next $m$ lines contains three integers $u$, $v$ and $w$
+($1 \le u,v \le n$, $u \ne v$, $1 \le w \le C$),
+representing a possible fibre link between stations $u$ and $v$
+with construction cost $w$.
+
+The stations are numbered from $1$ to $n$.
+Each fibre link allows communication in both directions.
+Multiple fibre links may exist between the same pair of stations.
+
+\section*{Output}
+
+Output the minimum total construction cost that allows messages
+to travel between every pair of stations.
+
+If this is impossible, output $-1$.

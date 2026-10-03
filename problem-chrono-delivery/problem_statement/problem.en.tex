@@ -1,0 +1,41 @@
+\problemname{Chrono Delivery}
+
+The Chrono Delivery Guild ships parcels between the N space stations of the Outer Reach, which
+are joined by one-way wormholes, each with a travel time. Some are temporal wormholes with
+negative travel time. The dispatcher Spock must find the minimum total time from station a to
+station b for each delivery request, using wormholes any number of times. If a route can pass
+through a time loop, a cycle with negative total time, the courier could arrive arbitrarily early, and
+the request is a paradox.
+
+\section*{Input}
+The first line contains three integers $N$, $M$ and $Q$
+($1 \le N \le 150$, $0 \le M \le 10\,000$, $1 \le Q \le 100\,000$): the
+number of stations, the number of wormholes and the number of delivery
+requests. Stations are numbered $0$ to $N-1$.
+
+Each of the next $M$ lines contains three integers $u$, $v$ and $t$
+($0 \le u, v < N$, $-10\,000 \le t \le 10\,000$), describing a one-way
+wormhole from station $u$ to station $v$ with travel time $t$. There may be
+several wormholes between the same pair of stations, and a wormhole may lead
+from a station back to itself.
+
+Each of the next $Q$ lines contains two integers $a$ and $b$
+($0 \le a, b < N$): a request to travel from station $a$ to station $b$.
+
+\section*{Output}
+For each request, in the order given, output a single line containing:
+\begin{itemize}
+  \item \texttt{UNREACHABLE} if there is no route from $a$ to $b$;
+  \item \texttt{PARADOX} if some route from $a$ to $b$ passes through a
+        station that lies on a time loop, so arbitrarily small times are
+        possible;
+  \item otherwise, the minimum total travel time from $a$ to $b$ as an
+        integer (which may be negative).
+\end{itemize}
+A courier who does not move takes time $0$, so a request with $a = b$ has
+answer $0$ unless it is a paradox.
+
+\section*{Note}
+With up to $100\,000$ requests, reading input line by line with
+\texttt{input()} may be slow in Python. Consider reading all input at once
+with \texttt{sys.stdin.buffer.read().split()}.
